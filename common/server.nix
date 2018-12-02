@@ -10,6 +10,11 @@
     screen tmux wget gnupg dnsutils
     file ag git emacs26-nox vim
   ];
+  services.emacs = {
+    enable = true;
+    defaultEditor = true;
+    package = pkgs.emacs26-nox;
+  };
   programs.mosh.enable = true;
   services.openssh.enable = true;
   services.openssh.permitRootLogin = "yes";
