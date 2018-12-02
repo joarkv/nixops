@@ -38,5 +38,5 @@ To check server status
 
 To reboot
 
-```$ nixops check -d hackerops```
+```$ nixops reboot -d hackerops```
 
