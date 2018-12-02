@@ -19,6 +19,7 @@
   programs.mosh.enable = true;
   services.openssh.enable = true;
   services.openssh.permitRootLogin = "yes";
+  services.fail2ban.enable = true;
   networking.firewall.enable = true;
 
   networking.interfaces.ens18 = {
