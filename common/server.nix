@@ -1,5 +1,8 @@
 { config, lib, pkgs, ...}:
 {
+  imports = [
+    <nixpkgs/nixos/modules/profiles/hardened.nix>
+  ];
   programs.fish.enable = true;
   services.haveged.enable = true;
   environment.systemPackages = with pkgs; [
