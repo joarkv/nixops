@@ -7,7 +7,11 @@
     protocol = "http";
     dataDir  = "/var/lib/grafana";
   };
+  services.influxdb = {
+    enable = true;
+  };
   networking.firewall.allowedTCPPorts = [80 443];
+  
   services.nginx = {
     enable = true;
     recommendedGzipSettings = true;
