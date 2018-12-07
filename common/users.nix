@@ -19,5 +19,13 @@
   "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCuOj3f2CIbZO+1yL3H+C6ZJYlKUF3F5ok6i6sEnYdv99WZR7Q4Ip/9x7XT2IpqsA8ayaDeEZEeuN6U/A5cIkJJ8YNrej+pvLV7AMxaRDe0FVdZBYfoRzyRXlqe3vJl6wiVYp1owAnIMUz+df/Qt8/IjenZAmY7ga30GJfmSDULAkfeyMP40dFl/wVQJobOmiyooRxMGDECt+xKZ8cOGTxvaqkEgUtY+pWpRO7cCZBygdnnMU+DNqFNF3PedRBhRMd+DOyXh0OBLmrO6m1sFAjrBqEFeWv/JMlRCimxe3JMkgDU4uqlSdXmPx+wCqFQEATYn+wMzy+7TwRP7PNNDGZiKoH12j+WjkqndDiP5xjNDdz6ompqRZ0D/SInag03lwzFGx+XMTWDwhcwOuR8XeByVPXhXIgDXbf7OMIsUwjFnoKrovvjUXFktWGFOzvakFFKGJsuYdCxMphlXiIIxzFalZ4WyG0Ci8Xj/2tcS1PMcQWWInzrZJNDe5SK/i7ao4TuLSLTg+4OIT+USl6SaEO/sPYRIro7Jd4p+lKEITD5KFLiKMTzsUeeq7CHd7t5BeauMfsShf8J3Y55qLXAWzvgyNefZwz9mRa+yz34D54+MNTgTUZa2Mb2Xx0mYTlGu/cPVnASeMRf0hXd/rentmEtG0XTzpbBZrB4u3JryUdmKQ== stig+x@stig.io"];
     
    };
+
+   heplaphon = {
+     isNormalUser = true;
+     createHome = true;
+     uid = 2001;
+     extraGroups = ["wheel"];
+     openssh.authorizedKeys.keys = ["ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQC/073c4DBiGno3sKi/OIxRWWydUNRWEfqq/EMt2TCALqfgL7ZfJ5LizyG9bH0+dkvSstbiy+GTCLlMYhLV7rF+k4QjrtLILdF7Iy/IsljwfEypfxiUFrq5TIt2jlxfguuxPQsvEqlnXhNkeRu4/XBKMRFUfzf+RQl+4WB/KwYlz5yp+heMNP6QtYB0E6abx9WIfQXUm+NSWUQuP9fofFZqJ/4I43MzPiUsWNYYsgvRcwWtIsXcdMbxF6QcQRqIq/jYEQC4NpUssX1db1btmr4QgUGK9qMrwk6/5wxidEWqQ8U4gEjVQMS7Pnz/FLF6ThBcnv/bKFclveOdLeJYHuYDn1o4so/L/YygSVhhT8CYHDqOc8TeCZZ9YHEBn9QdTxpX3qVmKgA+QFb0LKA1PXzKIVr5uYzD6H2730lGr7TGcMLRAwqACH28DQzazTsXwLV1I9k3bP74QPqSRiHx2szltnWFjwox+PsCbcH4UsEfpVHhH9GBSMnQ/a3kILvlq8bcsWweB0jdD5sh4VCcQfE/ULZu/HjbN42b/AYdYPGuNTpOwrS1/HhrZlLa000ed18D4EvPgV9oKI2vu7LXEjlWAoU4AqZpfsCfS6piJRA9VuYIWOKlmTQluRsvc2BTjcAXogNNgg490qslRazR/a5KsKwj1HpuWwMxheCd3Sz+dw== hepalphon@gmail.com"];
+   };
  };
 }
