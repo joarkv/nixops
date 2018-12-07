@@ -16,4 +16,15 @@
   networking.defaultGateway = "185.35.202.193";
   networking.defaultGateway6.address = "2a02:ed06::1";
   networking.nameservers =  ["1.1.1.1"];
+
+  networking.firewall.allowedTCPPorts = [80 443];
+  services.nginx = {
+    enable = true;
+    virtualHosts."nux.hackeriet.no" = {
+      enableACME = true;
+      forceSSL = true;
+      root = "/srv/www/nux";
+    };
+  };
+
 }
