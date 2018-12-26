@@ -7,6 +7,7 @@
   networking.nat.internalInterfaces = [ "wg0" ];
 
   networking.wireguard.interfaces = {
+    # The servers public key is: 63NG3mMRR2R+RXtfErXcRQ8JedneNH0hB1I58ir6dlY=
     wg0 = {
       ips = [ "10.31.42.1/24" ];
       listenPort = 51820;
