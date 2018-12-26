@@ -18,6 +18,11 @@
           publicKey = "ut+9x79/k3JzUaIynBNsM3DEAkBBnz+dpoxwRlk9GUc=";
           allowedIPs = [ "10.31.42.100/32" ];
         }
+        
+        {
+          publicKey = "msDoQv3EWw9lI8jR9ka4ZqeL4bIr1xkwruYNVh99CkM=";
+          allowedIPs = [ "10.31.42.105/32" ];
+        }
 
         # {
         #  publicKey = "<add your wireguard pk here>";
