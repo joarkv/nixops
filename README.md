@@ -40,3 +40,18 @@ To reboot
 
 ```$ nixops reboot -d hackerops```
 
+Skeleton client config
+---
+
+```
+[Interface]
+PrivateKey = INSERTPRIVATEKEYHERE
+Address = 10.31.42.105/32
+DNS = 1.1.1.1
+
+[Peer]
+PublicKey = 63NG3mMRR2R+RXtfErXcRQ8JedneNH0hB1I58ir6dlY=
+AllowedIPs = 0.0.0.0/0
+Endpoint = 185.35.202.197:51820
+```
+
