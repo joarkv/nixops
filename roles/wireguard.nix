@@ -19,9 +19,13 @@
           allowedIPs = [ "10.31.42.100/32" ];
         }
         
-        {
+        { # lassegs1
           publicKey = "msDoQv3EWw9lI8jR9ka4ZqeL4bIr1xkwruYNVh99CkM=";
           allowedIPs = [ "10.31.42.105/32" ];
+        }
+        { # lassegs2
+          publicKey = "QB2wZ7S6toGiSwCNGeHM9+R765oA810GSiGQVEVutEk=";
+          allowedIPs = [ "10.31.42.106/32" ];
         }
 
         # {
